@@ -14,7 +14,7 @@ Keyboard_Mastery is a simple typing speed test website that helps you check and 
 2. Start typing the displayed text as fast and accurately as you can.  
 3. See your typing speed (WPM) and accuracy results instantly.  
 
-## Installation (Optional)
+## Installation
 
 If you want to run the project locally:
 
