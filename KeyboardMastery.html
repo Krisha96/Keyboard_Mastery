@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+	<title>Keyboard Mastery</title>
+	<!-- <style>
+		img {
+		   width: 5%;
+		   height: auto;
+		}
+	 </style> -->
+	<!-- link the CSS file here -->
+	<link rel="stylesheet" href="TypingTest1.css">
+	
+</head>
+<body>
+	<nav>
+		<ul>
+		  <li onclick="openForm()"><a>Login</a></li> 
+		  <li><a href="#">About</a></li>
+		</ul>
+	  </nav>
+	
+<div class="container">
+	<div class="heading">
+	Keyboard Mastery
+	</div>
+	<div class="header">
+	<div class="wpm">
+		<div class="header_text">WPM</div>
+		<div class="curr_wpm">100</div>
+	</div>
+	<div class="cpm">
+		<div class="header_text">CPM</div>
+		<div class="curr_cpm">100</div>
+	</div>
+	<div class="errors">
+		<div class="header_text">Errors</div>
+		<div class="curr_errors">0</div>
+	</div>
+	<div class="timer">
+		<div class="header_text">Time</div>
+		<div class="curr_time">60s</div>
+	</div>
+	<div class="accuracy">
+		<div class="header_text">% Accuracy</div>
+		<div class="curr_accuracy">100</div>
+	</div>
+	</div>
+
+	<div class="quote">
+	Click on the area below to start the game.
+	</div>
+	<textarea class="input_area"
+	placeholder="start typing here..."
+	oninput="processCurrentText()"
+	onfocus="startGame()">
+	</textarea>
+	<button class="reload-button" 
+	onclick="window.location.reload()">
+	 Reload
+	</button>
+	<button class="restart_btn"
+	onclick="resetValues()">
+	Restart
+	</button>
+</div>
+
+	<div class="login-form" id="forms">
+		<form method="post">
+			<h2>Log In</h2>
+			<input type="text" id="username" name="username" placeholder="Username" required>
+			<input type="password" id="password" name="password" placeholder="Password" required>
+			<div class="btn">
+				<input type="submit" value="Log In">
+				<button onclick="closeForm(event)">BACK</button>
+			</div>
+			<div id="success-message" style="display: none; color: green;">Login Successful!</div>
+		</form>
+	</div>
+	
+<script src="TypingTest2.js">
+</script>
+<script src="login.js">
+</script>
+</body>
+</html>
